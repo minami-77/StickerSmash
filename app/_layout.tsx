@@ -7,6 +7,8 @@ export default function RootLayout() {
         name="index"
         options={{
           headerTitle: "Sticker Smash",
+          // Hide the back button on the index screen
+          headerLeft: () => <></>,
         }}
       />
       <Stack.Screen
@@ -14,6 +16,11 @@ export default function RootLayout() {
         options={{
           headerTitle: "About",
         }}
+      />
+      <Stack.Screen
+        name="+not-found"
+        // No need to add options here, as the +not-found.tsx file already has a Stack.Screen with the desired options.
+        options={{}}
       />
     </Stack>
   );
