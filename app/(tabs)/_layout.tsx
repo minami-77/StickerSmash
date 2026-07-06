@@ -15,6 +15,7 @@ export default function TabsLayout() {
         name="about"
         options={{
           headerTitle: "About",
+          // back button is shown by default on the about screen, so no need to hide it
         }}
       />
       <Tabs.Screen

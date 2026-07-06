@@ -6,7 +6,6 @@ export default function RootLayout() {
       <Stack.Screen
         name="(tabs)"
         options={{
-          headerTitle: "Sticker Smash",
           // Hide the header for the tabs layout
           headerShown: false,
         }}
