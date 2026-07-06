@@ -6,7 +6,7 @@ export default function Index() {
     <View style={styles.container}>
       <Text style={styles.text}>Hello StickerSmash!</Text>
       <Link href={"/about"} style={styles.button}>
-        Go to About
+        Go to About screen
       </Link>
     </View>
   );

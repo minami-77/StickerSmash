@@ -4,17 +4,11 @@ export default function RootLayout() {
   return (
     <Stack>
       <Stack.Screen
-        name="index"
+        name="(tabs)"
         options={{
           headerTitle: "Sticker Smash",
-          // Hide the back button on the index screen
-          headerLeft: () => <></>,
-        }}
-      />
-      <Stack.Screen
-        name="about"
-        options={{
-          headerTitle: "About",
+          // Hide the header for the tabs layout
+          headerShown: false,
         }}
       />
       <Stack.Screen
