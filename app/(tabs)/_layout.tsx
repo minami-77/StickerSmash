@@ -1,14 +1,26 @@
+import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
 export default function TabsLayout() {
   return (
-    <Tabs>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: "#ffd33d",
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
           headerTitle: "Sticker Smash",
-          // Hide the back button on the index screen
-          headerLeft: () => <></>,
+          // // Hide the back button on the index screen
+          // headerLeft: () => <></>,
+          tabBarIcon: ({ focused, color }) => (
+            <Ionicons
+              name={focused ? "home-sharp" : "home-outline"}
+              color={color}
+              size={24}
+            />
+          ),
         }}
       />
       <Tabs.Screen
@@ -16,6 +28,15 @@ export default function TabsLayout() {
         options={{
           headerTitle: "About",
           // back button is shown by default on the about screen, so no need to hide it
+          tabBarIcon: ({ focused, color }) => (
+            <Ionicons
+              name={
+                focused ? "information-circle" : "information-circle-outline"
+              }
+              color={color}
+              size={24}
+            />
+          ),
         }}
       />
       <Tabs.Screen
