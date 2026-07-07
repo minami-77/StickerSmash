@@ -1,10 +1,14 @@
+import { Image } from "expo-image";
 import { StyleSheet, Text, View } from "react-native";
+
+const PlaceholderImage = require("../../assets/images/background-image.png");
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Hello StickerSmash!</Text>
+      <Image source={PlaceholderImage} style={styles.image} />
 
+      <Text style={styles.text}>Hello StickerSmash!</Text>
       {/* Uncomment because we can go to the about screen via the tab bar */}
       {/* <Link href={"/about"} style={styles.button}>
         Go to About screen
@@ -27,5 +31,10 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textDecorationLine: "underline",
     color: "#fff",
+  },
+  image: {
+    width: 320,
+    height: 440,
+    borderRadius: 18,
   },
 });
