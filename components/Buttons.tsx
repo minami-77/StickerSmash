@@ -9,7 +9,12 @@ type Props = {
 export default function Button({ label, theme }: Props) {
   if (theme === "primary") {
     return (
-      <View style={styles.buttonContainer}>
+      <View
+        style={[
+          styles.buttonContainer,
+          { borderWidth: 4, borderColor: "#ffd33d", borderRadius: 18 },
+        ]}
+      >
         <Pressable
           style={[styles.button, { backgroundColor: "#fff" }]}
           onPress={() => alert("Button pressed!")}
