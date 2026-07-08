@@ -34,11 +34,11 @@ const styles = StyleSheet.create({
   //   textDecorationLine: "underline",
   //   color: "#fff",
   // },
-  image: {
-    width: 320,
-    height: 440,
-    borderRadius: 18,
-  },
+  // image: {
+  //   width: 320,
+  //   height: 440,
+  //   borderRadius: 18,
+  // },
   imageContainer: {
     flex: 1,
   },
