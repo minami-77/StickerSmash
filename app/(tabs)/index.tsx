@@ -1,3 +1,4 @@
+import Button from "@/components/Buttons";
 import ImageViewer from "@/components/ImageViewer";
 import { StyleSheet, View } from "react-native";
 
@@ -8,13 +9,16 @@ export default function Index() {
     <View style={styles.container}>
       <View style={styles.imageContainer}>
         <ImageViewer imgSource={PlaceholderImage} />
-      </View>
-
-      {/* <Text style={styles.text}>Hello StickerSmash!</Text> */}
-      {/* Uncomment because we can go to the about screen via the tab bar */}
-      {/* <Link href={"/about"} style={styles.button}>
+        {/* <Text style={styles.text}>Hello StickerSmash!</Text> */}
+        {/* Uncomment because we can go to the about screen via the tab bar */}
+        {/* <Link href={"/about"} style={styles.button}>
         Go to About screen
-      </Link> */}
+        </Link> */}
+      </View>
+      <View style={styles.footerContainer}>
+        <Button label="Choose a photo" />
+        <Button label="Use this photo" />
+      </View>
     </View>
   );
 }
@@ -41,5 +45,9 @@ const styles = StyleSheet.create({
   // },
   imageContainer: {
     flex: 1,
+  },
+  footerContainer: {
+    flex: 1 / 3,
+    alignItems: "center",
   },
 });
