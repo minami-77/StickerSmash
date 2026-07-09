@@ -30,7 +30,11 @@ export default function Index() {
         </Link> */}
       </View>
       <View style={styles.footerContainer}>
-        <Button label="Choose a photo" theme="primary" />
+        <Button
+          onPress={pickImageAsync}
+          label="Choose a photo"
+          theme="primary"
+        />
         <Button label="Use this photo" />
       </View>
     </View>
