@@ -46,7 +46,10 @@ export default function Index() {
             label="Choose a photo"
             theme="primary"
           />
-          <Button label="Use this photo" />
+          <Button
+            label="Use this photo"
+            onPress={() => setShowAppOptions(true)}
+          />
         </View>
       )}
     </View>
