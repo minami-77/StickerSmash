@@ -1,5 +1,5 @@
-import { Modal, Pressable, Text, View } from "react-native";
-import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { Modal, Pressable, StyleSheet, Text, View } from "react-native";
 
 type Props = {
   isVisible: boolean;
